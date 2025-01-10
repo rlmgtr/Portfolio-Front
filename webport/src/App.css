@@ -1,42 +1,33 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Ensure the entire app takes full height */
+html, body, #root {
+    height: 100%;
+    margin: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Flex container for layout */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header {
+    background-color: #333;
+    color: white;
+   
+    padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+/* Grow content area to push footer down */
+.content {
+    flex: 1;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+/* Footer styles */
+.footerPart {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
