@@ -19,7 +19,7 @@ contact div
 
 
 
-      This is home
+ 
     </div>
   )
 }
