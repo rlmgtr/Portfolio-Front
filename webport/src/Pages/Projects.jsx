@@ -8,6 +8,10 @@ const Projects = () => {
 Projects here
       </div>
 
+<div>
+  Services here
+</div>
+
 
     </div>
   )
